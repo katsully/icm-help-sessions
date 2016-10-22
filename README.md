@@ -29,6 +29,69 @@ Another thing to note is that zero starts at the most right hand point of the ci
 
 ![Degrees and Radians](icmDrawing.png)
 
+##Week 5
+
+#####Constructor Functions vs Object Literals
+
+We have two ways to create an object.
+
+1. Constructor Functions
+2. Object Literals
+
+A constructor function is written like so:
+
+~~~~
+function Person(first, last) {
+   this.first = first;
+   this.last = last;
+}
+~~~~
+
+This is a more dynamic way of creating objects because we can create many objects, each with different values for the first and last property.
+
+~~~~
+var kat = new Person("Kat", "Sullivan");
+var craig = new Person("Craig", "Pickard");
+~~~~
+
+Where as with an object literal, it's more of a container of data
+
+~~~~
+var kat = {
+   first: "kat",
+   last: "sullivan"
+}
+~~~~
+
+#####Prototypes
+
+Every Javascript object has a **prototype**.
+
+   * Prototype is also an object
+
+All Javascript objects inherit their properties and their methods from their prototype.
+
+Most of you are use to creating functions for an object in the constructor function
+
+~~~~
+function Person(first, last) {
+   this.first = first;
+   this.last = last;
+   this.getName = function() {
+      return this.first + " " + this.last;
+   }
+}
+~~~~
+
+However, with this way of defining a function, you are redeclaring this function everytime you create a new Person object which isn't very efficient. To only create the getName function once, and have it be available to every Person object, we are going to use the Person object's prototype.
+
+~~~~
+Person.prototype.getName = function() {
+   return this.firstName + " " + this.last;
+}
+~~~~
+ 
+
 
 
 
