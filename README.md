@@ -148,6 +148,14 @@ Why?
 
 We are not executing the function in the parameter. Which means the function is not executed immediately (it may seem immediate to you), it is "called back" at some point in the mousePressed function using the the function definition.
 
+
+##Week 7
+
+#####JSON
+**J**ava**S**cript **O**bject **N**otation - it's 'easy' to read and write for humans (that's debatable) and it's very easy for machines to parse and generate.
+
+JSON text format is the same regardless of if you're using P5, Processing, Cinder, Python, or any other language.
+
  
 
 
