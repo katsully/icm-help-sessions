@@ -90,6 +90,27 @@ Person.prototype.getName = function() {
    return this.firstName + " " + this.last;
 }
 ~~~~
+
+By adding onto the Person prototype, we only initialize the getName function once, and all Person objects have access to this function.
+
+#####Vectors
+
+Often when dealing with location or speed, you have two variables.
+
+~~~~
+var locationX;
+var locationY;
+~~~~
+
+However, with two variables for everything (or three if you're dealing with three dimensions) you soon find yourself with a lot of variables. To handle this (and to get the ability to use vector math), we use vectors. So our previous code becomes:
+
+`var location;`
+
+With `location.x` being the same thing as `locationX`.
+
+
+##Week 6
+
  
 
 
