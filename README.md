@@ -111,6 +111,43 @@ With `location.x` being the same thing as `locationX`.
 
 ##Week 6
 
+#####HTML
+**H**yper **T**ext **M**arkup **L**anguage tags represent elements which are the building block of your webpage. 
+
+#####DOM
+**D**ocument **O**bject **M**odel is the HTML that gets parsed to create your webpage. 
+
+#####Functions and Callbacks
+I've always described functions as verbs and objects as nouns and said they are two different things, but in Javascript, functions can also objects.
+
+woah
+
+This means functions can be stored in variables, passed as arguments to functions, created within function, and returned from functions.
+
+Callback functions are a technique that is part of functional programming. Basically, functional programming lets you use functions as arguments. While JavaScript is *not*, it does use callback functions.
+
+So what is a callback function?
+A function that is passed to another function as a parameter and the callback function is called. 
+
+~~~~
+var button = select('#button'); // get the HTML element with id 'button'
+
+button.mousePressed(doSomething); // doSomething is the callback function
+
+// doSomething is a function we write that will get called whenever someone presses the button
+function doSomething(){
+  // some code
+}
+~~~~
+
+When we pass a callback as an argument to another function, we are only passing the callback function definition. We aren't executing the callback function inside the function. So it's
+`button.mousePressed(doSomething);`</br>
+NOT `button.mousePressed(doSomething());` 
+
+Why?
+
+We are not executing the function in the parameter. Which means the function is not executed immediately (it may seem immediate to you), it is "called back" at some point in the mousePressed function using the the function definition.
+
  
 
 
