@@ -1,6 +1,8 @@
 #ICM Help Sessions
 with Kat & Craig
 
+####Are we missing notes? Was something not explained clearly? Looking for an example of something and not finding it? Create an [issue](https://github.com/katsully/icm-help-sessions/issues) and let us know!
+
 ##Week 4
 
 What is an object?</br>
@@ -158,7 +160,10 @@ JSON text format is the same regardless of if you're using P5, Processing, Cinde
 
  
 
+##Week 8
 
+#####API
+**A**pplication **P**rogram **I**nterface can be used to interact with software applications, such as Facebook, the New York Times, Youtube, Google Maps, etc. With APIs you can retrieve data, send messages to the client (ie Tweet from a Twitterbot), & so much more! APIs are basically a set of rules that govern how one application talks to another (ie how your P5 sketch asks Twitter for data or how Yelp uses Google maps to show where your favorite restaurant is).  
 
-
-
+But procede with caution...
+Just because a company has an API today, doesn't mean it will be available tomorrow. For example, a major component of my ICM final was based on gathering public data from Facebook's API, however on the morning of my final, Facebook changed their API and you could no longer query public data. 
