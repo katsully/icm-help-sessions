@@ -29,7 +29,7 @@ When talking about units of degrees, most people are more familiar with degrees 
 
 Another thing to note is that zero starts at the most right hand point of the circle.
 
-![Degrees and Radians](icmDrawing.png)
+![Degrees and Radians](images/icmDrawing.png)
 
 ##Week 5
 
@@ -181,7 +181,7 @@ You'll notice that if you don't use the hide function in setup you'll see your v
 
 It's very simple to see your sketches on your phone! First, run your P5 sketch using the desktop editor. If you look closely you'll see the port number 
 
-![Port Number](portNumber.png)
+![Port Number](images/portNumber.png)
 
 Next, find your computer's IP address. In System Preferences, and go to Network to find it.
 
