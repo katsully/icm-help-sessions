@@ -120,7 +120,7 @@ With `location.x` being the same thing as `locationX`.
 **D**ocument **O**bject **M**odel is the HTML that gets parsed to create your webpage. 
 
 #####Functions and Callbacks
-I've always described functions as verbs and objects as nouns and said they are two different things, but in Javascript, functions can also objects.
+I've always described functions as verbs and objects as nouns and said they are two different things, but in Javascript, functions can also be objects.
 
 woah
 
@@ -175,3 +175,14 @@ Just because a company has an API today, doesn't mean it will be available tomor
 Why do I need to use video.hide() in setup?
 
 You'll notice that if you don't use the hide function in setup you'll see your video next to or underneath your canvas. This is because the createVideo function creates a video HTML element, just like createButton or createP, and just like a new button or new paragraph, this doesn't happen on top of the canvas but next to the canvas.
+
+
+#####Mobile
+
+It's very simple to see your sketches on your phone! First, run your P5 sketch using the desktop editor. If you look closely you'll see the port number 
+
+![Port Number](portNumber.png)
+
+Next, find your computer's IP address. In System Preferences, and go to Network to find it.
+
+To put it all together, we are going to make sure our computer and phone are on the same Wifi network and open an internet browser on your phone. In the url type id-address:port-number. For example, 172.16.249.77:3001. Ta-da! You should see your sketch on your phone.

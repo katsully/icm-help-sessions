@@ -1,22 +1,31 @@
-var cap;
+var vid, vid2, vid3;
+var slider, redSlider;
+var inputColorVal = 1;
+
 function setup() {
   createCanvas(400, 400);
-  cap = createCapture(VIDEO);
-  cap.hide();
-  rectMode(CENTER);
-  noStroke();
+  
+  vid = createVideo('rotating_stack.mp4');
+  vid.loop();
+  vid.hide();
+
+  vid2 = createVideo('rotating_stack.mp4');
+  vid2.loop();
+  vid2.speed(2);
+  vid2.hide();
+
+  vid3 = createVideo('rotating_stack.mp4');
+  vid3.speed(3);
+  vid3.loop();
+  vid3.hide();
 }
+
 function draw() {
-  background(50);
-  fill(255);
-  cap.loadPixels();
-  for (var cy = 0; cy < cap.height; cy += 10) {
-    for (var cx = 0; cx < cap.width; cx += 5) {
-      var offset = ((cy*cap.width)+cx)*4;
-      var xpos = (cx / cap.width) * width;
-      var ypos = (cy / cap.height) * height;
-      rect(xpos, ypos, 10,
-        10 * (cap.pixels[offset+1]/255));
-    }
-  }
+  background(255);
+
+  image(vid3);
+  tint(255, 127);
+  image(vid2);
+  tint(255, 127);
+  image(vid);
 }
