@@ -167,3 +167,11 @@ JSON text format is the same regardless of if you're using P5, Processing, Cinde
 
 But procede with caution...
 Just because a company has an API today, doesn't mean it will be available tomorrow. For example, a major component of my ICM final was based on gathering public data from Facebook's API, however on the morning of my final, Facebook changed their API and you could no longer query public data. 
+
+##Week 9
+
+#####Videos
+
+Why do I need to use video.hide() in setup?
+
+You'll notice that if you don't use the hide function in setup you'll see your video next to or underneath your canvas. This is because the createVideo function creates a video HTML element, just like createButton or createP, and just like a new button or new paragraph, this doesn't happen on top of the canvas but next to the canvas.
