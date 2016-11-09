@@ -179,10 +179,13 @@ You'll notice that if you don't use the hide function in setup you'll see your v
 
 #####Mobile
 
-It's very simple to see your sketches on your phone! First, run your P5 sketch using the desktop editor. If you look closely you'll see the port number 
+It's very simple to see your sketches on your phone! First, run your P5 sketch using the desktop editor. If you look closely you'll see the port number: 
 
 <img src="images/portNumber.png" alt="Port Number" width="200" />
 
 Next, find your computer's IP address. In System Preferences, and go to Network to find it.
 
 To put it all together, we are going to make sure our computer and phone are on the same Wifi network and open an internet browser on your phone. In the url type id-address:port-number. For example, 172.16.249.77:3001. Ta-da! You should see your sketch on your phone.
+
+##Week 10
+
