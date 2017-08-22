@@ -1,9 +1,9 @@
-#ICM Help Sessions
+# ICM Help Sessions
 with Kat & Craig
 
-####Are we missing notes? Was something not explained clearly? Looking for an example of something and not finding it? Create an [issue](https://github.com/katsully/icm-help-sessions/issues) and let us know!
+#### Are we missing notes? Was something not explained clearly? Looking for an example of something and not finding it? Create an [issue](https://github.com/katsully/icm-help-sessions/issues) and let us know!
 
-##Week 4
+## Week 4
 
 What is an object?</br>
 An **object** is a collection of properties, a property is an association between a name (or key) and a value.
@@ -31,9 +31,9 @@ Another thing to note is that zero starts at the most right hand point of the ci
 
 ![Degrees and Radians](images/icmDrawing.png)
 
-##Week 5
+## Week 5
 
-#####Constructor Functions vs Object Literals
+##### Constructor Functions vs Object Literals
 
 We have two ways to create an object.
 
@@ -65,7 +65,7 @@ var kat = {
 }
 ~~~~
 
-#####Prototypes
+##### Prototypes
 
 Every Javascript object has a **prototype**.
 
@@ -95,7 +95,7 @@ Person.prototype.getName = function() {
 
 By adding onto the Person prototype, we only initialize the getName function once, and all Person objects have access to this function.
 
-#####Vectors
+##### Vectors
 
 Often when dealing with location or speed, you have two variables.
 
@@ -111,15 +111,15 @@ However, with two variables for everything (or three if you're dealing with thre
 With `location.x` being the same thing as `locationX`.
 
 
-##Week 6
+## Week 6
 
-#####HTML
+##### HTML
 **H**yper **T**ext **M**arkup **L**anguage tags represent elements which are the building block of your webpage. 
 
-#####DOM
+##### DOM
 **D**ocument **O**bject **M**odel is the HTML that gets parsed to create your webpage. 
 
-#####Functions and Callbacks
+##### Functions and Callbacks
 I've always described functions as verbs and objects as nouns and said they are two different things, but in Javascript, functions can also be objects.
 
 woah
@@ -151,33 +151,33 @@ Why?
 We are not executing the function in the parameter. Which means the function is not executed immediately (it may seem immediate to you), it is "called back" at some point in the mousePressed function using the the function definition.
 
 
-##Week 7
+## Week 7
 
-#####JSON
+##### JSON
 **J**ava**S**cript **O**bject **N**otation - it's 'easy' to read and write for humans (that's debatable) and it's very easy for machines to parse and generate.
 
 JSON text format is the same regardless of if you're using P5, Processing, Cinder, Python, or any other language.
 
  
 
-##Week 8
+## Week 8
 
-#####API
+##### API
 **A**pplication **P**rogram **I**nterface can be used to interact with software applications, such as Facebook, the New York Times, Youtube, Google Maps, etc. With APIs you can retrieve data, send messages to the client (ie Tweet from a Twitterbot), & so much more! APIs are basically a set of rules that govern how one application talks to another (ie how your P5 sketch asks Twitter for data or how Yelp uses Google maps to show where your favorite restaurant is).  
 
 But procede with caution...
 Just because a company has an API today, doesn't mean it will be available tomorrow. For example, a major component of my ICM final was based on gathering public data from Facebook's API, however on the morning of my final, Facebook changed their API and you could no longer query public data. 
 
-##Week 9
+## Week 9
 
-#####Videos
+##### Videos
 
 Why do I need to use video.hide() in setup?
 
 You'll notice that if you don't use the hide function in setup you'll see your video next to or underneath your canvas. This is because the createVideo function creates a video HTML element, just like createButton or createP, and just like a new button or new paragraph, this doesn't happen on top of the canvas but next to the canvas.
 
 
-#####Mobile
+##### Mobile
 
 It's very simple to see your sketches on your phone! First, run your P5 sketch using the desktop editor. If you look closely you'll see the port number: 
 
@@ -187,5 +187,5 @@ Next, find your computer's IP address. In System Preferences, and go to Network 
 
 To put it all together, we are going to make sure our computer and phone are on the same Wifi network and open an internet browser on your phone. In the url type id-address:port-number. For example, 172.16.249.77:3001. Ta-da! You should see your sketch on your phone.
 
-##Week 10
+## Week 10
 
