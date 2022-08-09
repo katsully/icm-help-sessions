@@ -24,7 +24,7 @@ This creates a structure where at index 0 the value will be 698, index 1 the val
 |---|---|---|
 |698|743|84 |
 
-#####Degrees and Radians
+##### Degrees and Radians
 When talking about units of degrees, most people are more familiar with degrees (0 to 360), but in P5 we use radians. Instead of 0 to 360, in radians, the range is 0 to 2*PI. </br>
 
 Another thing to note is that zero starts at the most right hand point of the circle.
